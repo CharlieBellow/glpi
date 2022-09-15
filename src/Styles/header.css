@@ -1,3 +1,5 @@
+/* colocar essas variáveis em um arquivo separado */
+
 :root {
   --sombra-card: 0px 8px 16px rgba(0, 0, 0, 0.16);
 
@@ -30,7 +32,7 @@
   background: url('../assets/ufal-sigla-branca-fundo-transparente.png') center 0 no-repeat fixed;
   background-position: left 48rem top -6.5rem;
   background-size: 25.75rem 32.28rem;
-  /* pra resolver o problema da opacidade preciso deixar a imagem já opaca em 40% (fazer no gimp) */
+  /* pra resolver o problema da opacidade preciso deixar a imagem já opaca em 40% (fazer no gimp e diminuir o tamanho da imagem pra o arquivo não ficar pesado) */
   /*opacity: 0.40;*/
 
 }
@@ -52,14 +54,19 @@
   font-weight: 400;
 }
 
-/* 
-height: 41.17647171020508px;
-width: 328px;
-left: 347px;
-top: 7.84326171875px;
-border-radius: 0px;
+.header__inputIcon {
+  position: relative;
 
-*/
+}
+
+.header__iconSearch {
+  position: absolute;
+  top: 25%;
+  left: 18px;
+  color: var(--cinza-texto)
+}
+
+
 .header__searchBar {
   width: 20.5rem;
   border-radius: 12px;
@@ -84,22 +91,18 @@ font-weight: 400;
   /*decoration: none*/
 }
 
-.header__inputIcon i{
-  position: absolute;
-  left: 0;
-  top: 8px;
-  padding: 9px 8px;
+.header__icons {
+  display: flex;
+}
+
+.header__iconsChild {
+  padding-left: 24px;
+  
 }
 
 
-       .header__inputIcon {
-        position: relative;
-           
-        }
-
 div .profile {
   display: flex;
-
 
 }
 

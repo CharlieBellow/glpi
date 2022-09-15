@@ -3,7 +3,7 @@ import "../../Styles/header.css"
 //import logoUfal from '../../assets/ufal-sigla-branca-fundo-transparente.png'
 
 
-import { FaRegBell, FaUserPlus} from 'react-icons/fa';
+import { FaRegBell, FaUserPlus, FaSearch} from 'react-icons/fa';
 
 
 function Header() {
@@ -17,14 +17,19 @@ function Header() {
           <div className="header__content">
             <h4>Nome da Página</h4>
             <div className="header__inputIcon">
-              <i className="fa fa-search icon fa-lg fa-fw" aria-hidden="true"></i>
+              <FaSearch size={18} className="header__iconSearch"/>
               <label htmlFor="search"></label>
               <input type="text" name="search" placeholder="o que você está buscando?" className="header__searchBar" />
             </div>
-              {/*<FaSearch size={18} />*/}
-            <div className="icon">
+            <div className="header__icons">
+              <div className="header__iconsChild">
+
               <FaRegBell size={24}/>
+              </div>
+              <div className="header__iconsChild">
               <FaUserPlus size={24}/>
+
+              </div>
             </div>
             <div className="profile">
               <div className="profile-title">
@@ -36,7 +41,6 @@ function Header() {
           </div>
         </div>
         <div className="caixa">
-      {/*<img src={logoUfal} alt="logo UFAL" className="logo"/>*/}
           </div>
 
       </header>
