@@ -1,6 +1,9 @@
 
+import * as React from 'react';
 
-import './App.css';
+
+import './Styles/reset.css';
+
 import Header from './components/Header/index.jsx'
 
 function App() {

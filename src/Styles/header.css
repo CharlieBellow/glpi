@@ -1,0 +1,111 @@
+:root {
+  --sombra-card: 0px 8px 16px rgba(0, 0, 0, 0.16);
+
+  --cinza-texto: #797D9A;
+  --branco-gelo-forte: #EDF2F7;
+  --azul-ufal: #0095DA;
+  --vermelho-ufal: #ED1C24;
+  --fundo: #212532;
+  --fundo-claro: #333849;
+  --cinza-medio: #DEE2E6;
+  --branco-gelo: #F7FAFC;
+  --azul-gradiente: linear-gradient(90.18deg, rgba(1, 149, 218, 0.67) 16.29%, #0195DA 37.58%, #1B4BA8 99.89%);
+}
+
+.header {
+  height: 7.75rem;
+  width: 100vw;
+  border-radius: 0px 0px 8px 0px;
+  color: white;
+  background: var(--azul-gradiente)
+
+
+}
+
+
+.header__background {
+
+  height: 7.75rem;
+
+  background: url('../assets/ufal-sigla-branca-fundo-transparente.png') center 0 no-repeat fixed;
+  background-position: left 48rem top -6.5rem;
+  background-size: 25.75rem 32.28rem;
+  /* pra resolver o problema da opacidade preciso deixar a imagem já opaca em 40% (fazer no gimp) */
+  /*opacity: 0.40;*/
+
+}
+
+.header__content {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 2.625rem;
+  width: auto;
+  height: 3.125rem;
+  justify-content: space-around;
+  
+}
+
+.header__content h4 {
+  font-size: 1.65rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+
+/* 
+height: 41.17647171020508px;
+width: 328px;
+left: 347px;
+top: 7.84326171875px;
+border-radius: 0px;
+
+*/
+.header__searchBar {
+  width: 20.5rem;
+  border-radius: 12px;
+  color: var(--cinza-texto);
+  background: var(--branco-gelo-forte);
+/* Sombra Cards */
+
+box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.16);
+border-radius: 12px;
+border: none;
+
+padding: 8px 101px 8px 58px; 
+font-size: 16px;
+font-weight: 400;
+
+
+}
+
+/* como tirar essa linha preta quando clica no input? */
+.header__searchBar:focus {
+  border: 0px solid;
+  /*decoration: none*/
+}
+
+.header__inputIcon i{
+  position: absolute;
+  left: 0;
+  top: 8px;
+  padding: 9px 8px;
+}
+
+
+       .header__inputIcon {
+        position: relative;
+           
+        }
+
+div .profile {
+  display: flex;
+
+
+}
+
+.profile-photo {
+  width: 2.875rem;
+  height: 2.875rem;
+  border-radius: 50%;
+
+}
