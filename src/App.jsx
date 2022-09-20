@@ -1,15 +1,25 @@
 
 import * as React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 
-
+//importando os estilos
 import './Styles/reset.css';
 
-import Header from './components/Header/index.jsx'
+// importando as rotas
+import Dashboard from './Pages/Dashboard'
+
 
 function App() {
   return (
     <div className="App">
-      <Header />
+      <Router>
+        <Routes>
+          <Route path="/" element={<Dashboard /> }>
+          {/*<Route path="/Categorias" element={<Categorias />} />*/}
+            
+          </Route>
+        </Routes>
+      </Router>
     </div>
   );
 }

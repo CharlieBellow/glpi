@@ -1,6 +1,7 @@
 import * as React from 'react';
+//import { Link } from 'react-router-dom';
+import "../../Styles/base.css"
 import "../../Styles/header.css"
-//import logoUfal from '../../assets/ufal-sigla-branca-fundo-transparente.png'
 
 
 import { FaRegBell, FaUserPlus, FaSearch} from 'react-icons/fa';
@@ -33,7 +34,11 @@ function Header() {
             </div>
             <div className="profile">
               <div className="profile-title">
-                <p>Nome Completo</p>
+                <p
+                    className="profile__title">Nome Completo
+                  {/*<Link to="/Perfil"*/}
+                  {/*</Link>*/}
+                </p>
                 <p>email@email.com</p>
               </div>
               <img src="https://www.github.com/charliebellow.png" alt="favicon" className="profile-photo"/>

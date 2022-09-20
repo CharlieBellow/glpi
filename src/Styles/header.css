@@ -1,26 +1,14 @@
+
 /* colocar essas variáveis em um arquivo separado */
 
-:root {
-  --sombra-card: 0px 8px 16px rgba(0, 0, 0, 0.16);
-
-  --cinza-texto: #797D9A;
-  --branco-gelo-forte: #EDF2F7;
-  --azul-ufal: #0095DA;
-  --vermelho-ufal: #ED1C24;
-  --fundo: #212532;
-  --fundo-claro: #333849;
-  --cinza-medio: #DEE2E6;
-  --branco-gelo: #F7FAFC;
-  --azul-gradiente: linear-gradient(90.18deg, rgba(1, 149, 218, 0.67) 16.29%, #0195DA 37.58%, #1B4BA8 99.89%);
-}
-
 .header {
+  position: fixed;
   height: 7.75rem;
   width: 100vw;
   border-radius: 0px 0px 8px 0px;
   color: white;
-  background: var(--azul-gradiente)
-
+  background: var(--azul-gradiente);
+  z-index: 0;
 
 }
 
@@ -28,10 +16,12 @@
 .header__background {
 
   height: 7.75rem;
-
+  
   background: url('../assets/ufal-sigla-branca-fundo-transparente.png') center 0 no-repeat fixed;
   background-position: left 48rem top -6.5rem;
   background-size: 25.75rem 32.28rem;
+  
+  /*position: fixed;*/
   /* pra resolver o problema da opacidade preciso deixar a imagem já opaca em 40% (fazer no gimp e diminuir o tamanho da imagem pra o arquivo não ficar pesado) */
   /*opacity: 0.40;*/
 
@@ -50,7 +40,7 @@
 
 .header__content h4 {
   font-size: 1.65rem;
-  font-family: 'Roboto', sans-serif;
+  
   font-weight: 400;
 }
 
@@ -68,7 +58,7 @@
 
 
 .header__searchBar {
-  width: 20.5rem;
+  width: auto;
   border-radius: 12px;
   color: var(--cinza-texto);
   background: var(--branco-gelo-forte);
@@ -103,7 +93,16 @@ font-weight: 400;
 
 div .profile {
   display: flex;
+  align-items: center;
+  
+}
 
+.profile-title {
+  display: flex;
+  flex-direction: column;
+  padding-right: .75rem;
+  align-items: flex-end;
+  
 }
 
 .profile-photo {
@@ -111,4 +110,14 @@ div .profile {
   height: 2.875rem;
   border-radius: 50%;
 
+}
+
+.profile__title {
+  color: var(--azul-ufal);
+  text-decoration: none;
+}
+
+.profile__title:hover {
+  opacity: 0.7;
+  text-decoration: none;
 }
